@@ -8,7 +8,9 @@ Features
 
 * Bindet die Parsedown-Klasse im Frontend und Backend ein
 * Markdown Extra Unterstützung
+* Line Break Unterstützung
 * String Table AddOn Unterstützung
+* Ausgabe ohne `<p>` Tags möglich
 
 Codebeispiele
 -------------
