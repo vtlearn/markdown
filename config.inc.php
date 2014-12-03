@@ -2,7 +2,7 @@
 // init addon
 $REX['ADDON']['name']['markdown'] = 'Markdown';
 $REX['ADDON']['page']['markdown'] = 'markdown';
-$REX['ADDON']['version']['markdown'] = '1.1.0';
+$REX['ADDON']['version']['markdown'] = '1.2.0 DEV';
 $REX['ADDON']['author']['markdown'] = 'RexDude';
 $REX['ADDON']['supportpage']['markdown'] = 'forum.redaxo.org';
 $REX['ADDON']['perm']['markdown'] = 'markdown[]';
@@ -33,6 +33,10 @@ if ($REX['REDAXO']) {
 	// include parsedown class for frontend
 	if (!class_exists('Parsedown')) {
 		require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/Parsedown.php');
+	}
+
+	if (!class_exists('ParsedownExtra')) {
+		require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/ParsedownExtra.php');
 	}
 }
 ?>

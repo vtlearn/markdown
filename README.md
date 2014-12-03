@@ -1,12 +1,13 @@
 Markdown AddOn für REDAXO 4
 ===========================
 
-Ermöglicht Markdown über die Klasse [Parsedown](http://parsedown.org) für das REDAXO Frontend.
+Ermöglicht Markdown über die Klasse [Parsedown](http://parsedown.org) für REDAXO.
 
 Features
 --------
 
 * Bindet die Parsedown-Klasse im Frontend und Backend ein
+* Markdown Extra Unterstützung
 * String Table AddOn Unterstützung
 
 Codebeispiele

@@ -1,23 +1,29 @@
 <?php
 class rex_markdown {
-	public static function getHtml($md) {
-		return Parsedown::instance()->text($md);
+	public static function getHtml($md, $breaksEnabled = true) {
+		$parsedown = new Parsedown();
+		$parsedown->setBreaksEnabled($breaksEnabled);
+
+		return $parsedown->text($md);
 	}
 
-	public static function getHtmlLine($md) {
-		return Parsedown::instance()->text($md);
+	public static function getHtmlLine($md, $breaksEnabled = true) {
+		$parsedown = new Parsedown();
+		$parsedown->setBreaksEnabled($breaksEnabled);
+
+		return $parsedown->line($md);
 	}
 
-	public static function getString($key) {
-		$md = rex_getString($key);
+	public static function getString($key, $breaksEnabled = true) {
+		$md = rex_string_table::getString($key);
 
-		return Parsedown::instance()->text($md);
+		return self::getHtml($md, $breaksEnabled);
 	}
 
-	public static function getStringLine($key) {
-		$md = rex_getString($key);
+	public static function getStringLine($key, $breaksEnabled = true) {
+		$md = rex_string_table::getString($key);
 
-		return Parsedown::instance()->line($md);
+		return self::getHtmlLine($md, $breaksEnabled);
 	}
 }
 
