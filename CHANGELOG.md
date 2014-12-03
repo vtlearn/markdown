@@ -1,7 +1,7 @@
 Markdown AddOn - Changelog
 ==========================
 
-### Version 1.2.0 DEV
+### Version 1.2.0 - 03. Dezember 2014
 
 * `rex_markdown::getHtmlLine()` gefixt
 * Parsedown auf Version 1.1.4 aktualisiert

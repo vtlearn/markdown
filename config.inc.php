@@ -2,7 +2,7 @@
 // init addon
 $REX['ADDON']['name']['markdown'] = 'Markdown';
 $REX['ADDON']['page']['markdown'] = 'markdown';
-$REX['ADDON']['version']['markdown'] = '1.2.0 DEV';
+$REX['ADDON']['version']['markdown'] = '1.2.0';
 $REX['ADDON']['author']['markdown'] = 'RexDude';
 $REX['ADDON']['supportpage']['markdown'] = 'forum.redaxo.org';
 $REX['ADDON']['perm']['markdown'] = 'markdown[]';
