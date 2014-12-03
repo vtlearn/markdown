@@ -34,9 +34,10 @@ if ($REX['REDAXO']) {
 	if (!class_exists('Parsedown')) {
 		require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/Parsedown.php');
 	}
+}
 
-	if (!class_exists('ParsedownExtra')) {
-		require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/ParsedownExtra.php');
-	}
+// for front end backend
+if (!class_exists('ParsedownExtra')) {
+	require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/ParsedownExtra.php');
 }
 ?>
