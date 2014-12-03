@@ -462,8 +462,7 @@ class Parsedown
     {
         $text = $Block['element']['text']['text'];
 
-        $text = rex_highlight_string($text, true);
-        //$text = htmlspecialchars($text, ENT_NOQUOTES, 'UTF-8');
+        $text = htmlspecialchars($text, ENT_NOQUOTES, 'UTF-8');
 
         $Block['element']['text']['text'] = $text;
 
