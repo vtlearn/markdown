@@ -36,7 +36,7 @@ if ($REX['REDAXO']) {
 	}
 }
 
-// for front end backend
+// for frontend and backend
 if (!class_exists('ParsedownExtra')) {
 	require($REX['INCLUDE_PATH'] . '/addons/markdown/lib/ParsedownExtra.php');
 }
